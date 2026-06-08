@@ -1,20 +1,44 @@
-// Member 2: Implement this component
-// - Fetch books from API (replace useBooks with your fetch logic)
-// - Handle loading and error states
-// - Display books using .map() via BookCard
-import { useBooks } from '../context/BooksContext'
+import { useState, useEffect } from 'react'
 import BookCard from './BookCard'
 
 function BookList() {
-  const { filteredBooks } = useBooks()
+  const [books, setBooks] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(null)
 
-  if (filteredBooks.length === 0) {
+  useEffect(() => {
+    fetch("http://localhost:3001/books")
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Failed to fetch books")
+        }
+        return response.json()
+      })
+      .then(data => {
+        setBooks(data)
+        setLoading(false)
+      })
+      .catch(err => {
+        setError(err.message)
+        setLoading(false)
+      })
+  }, [])
+
+  if (loading) {
+    return <p className="loading-message">Loading books...</p>
+  }
+
+  if (error) {
+    return <p className="error-message">Error: {error}</p>
+  }
+
+  if (books.length === 0) {
     return <p className="empty-message">No books found.</p>
   }
 
   return (
     <div className="book-list">
-      {filteredBooks.map(book => (
+      {books.map(book => (
         <BookCard key={book.id} book={book} />
       ))}
     </div>
