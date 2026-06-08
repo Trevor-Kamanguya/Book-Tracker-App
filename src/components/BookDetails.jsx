@@ -5,7 +5,11 @@ import { BooksContext } from "../context/BooksContext";
 function BookDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
-  const { books } = useContext(BookContext);
+  const {
+    books,
+    updateStatus,
+    deleteBook
+  } = useBooks();
 
   const book = books.find((b) => b.id === parseInt(id));
 
@@ -32,6 +36,20 @@ function BookDetails() {
         <h1>{book.title}</h1>
         <p>by {book.author}</p>
         <p>Status: {book.status}</p>
+        <div>
+  <label>Update Status: </label>
+
+  <select
+    value={book.status}
+    onChange={(e) =>
+      updateStatus(book.id, e.target.value)
+    }
+  >
+    <option value="Want to Read">Want to Read</option>
+    <option value="Currently Reading">Currently Reading</option>
+    <option value="Completed">Completed</option>
+  </select>
+</div>
         <p>Genre: {book.genre}</p>
 
         {book.description && (
@@ -44,5 +62,14 @@ function BookDetails() {
     </div>
   );
 }
+
+<button
+  onClick={() => {
+    deleteBook(book.id);
+    navigate("/");
+  }}
+>
+  Delete Book
+</button>
 
 export default BookDetails;
