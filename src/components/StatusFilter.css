@@ -1,0 +1,29 @@
+.status-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 1rem 0;
+}
+
+.filter-btn {
+  padding: 0.45rem 1.1rem;
+  border: 2px solid #c9b99a;
+  border-radius: 2rem;
+  background: transparent;
+  color: #5c4a2a;
+  font-size: 0.875rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: #8b6f47;
+  background: #f5ede0;
+}
+
+.filter-btn.active {
+  background: #5c4a2a;
+  border-color: #5c4a2a;
+  color: #fff;
+}
