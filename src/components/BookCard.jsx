@@ -1,6 +1,3 @@
-// Member 2: Implement this reusable component
-// - Display book cover, title, author, genre, status
-// - Link to /books/:id for details
 import { Link } from 'react-router-dom'
 
 function BookCard({ book }) {
