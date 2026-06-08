@@ -1,16 +1,77 @@
-# React + Vite
+# Book Tracker App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React app to track books you are reading, want to read, or have completed.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1. Install dependencies
+```bash
+npm install
+```
 
-## React Compiler
+### 2. Start the JSON Server (backend)
+```bash
+npx json-server --watch db.json --port 6001
+```
+Backend runs at: **http://localhost:6001/books**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 3. Start the React app (frontend)
+```bash
+npm run dev
+```
+Frontend runs at: **http://localhost:5173**
 
-## Expanding the ESLint configuration
+## API Endpoints
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | http://localhost:6001/books | Get all books |
+| GET | http://localhost:6001/books/:id | Get a single book |
+| POST | http://localhost:6001/books | Add a new book |
+| PATCH | http://localhost:6001/books/:id | Update a book (e.g. status) |
+| DELETE | http://localhost:6001/books/:id | Delete a book |
+
+## Project Structure
+
+```
+src/
+├── components/
+│   ├── Navbar.jsx          # Member 1
+│   ├── Footer.jsx          # Member 1
+│   ├── BookList.jsx        # Member 2
+│   ├── BookCard.jsx        # Member 2
+│   ├── BookForm.jsx        # Member 3
+│   ├── BookDetails.jsx     # Member 4
+│   └── StatusFilter.jsx    # Member 5
+├── pages/
+│   ├── HomePage.jsx
+│   ├── AddBookPage.jsx
+│   └── BookDetailsPage.jsx
+├── context/
+│   └── BooksContext.jsx    # Shared state for all members
+├── App.jsx                 # Routes and layout
+└── main.jsx
+```
+
+## Shared Context (useBooks hook)
+
+All components access shared state via:
+```js
+import { useBooks } from '../context/BooksContext'
+
+const { books, filteredBooks, filter, setFilter, addBook, updateStatus, deleteBook } = useBooks()
+```
+
+## Book Data Structure
+
+```js
+{
+  id: 1,
+  title: "Atomic Habits",
+  author: "James Clear",
+  genre: "Self-development",
+  status: "Currently Reading",  // "Want to Read" | "Currently Reading" | "Completed"
+  image: "https://...",
+  description: "..."
+}
+```
