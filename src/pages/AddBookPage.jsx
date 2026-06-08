@@ -1,10 +1,16 @@
+import { useNavigate } from 'react-router-dom'
 import BookForm from '../components/BookForm'
 
 function AddBookPage() {
+  const navigate = useNavigate()
+
+  function handleAdded() {
+    navigate('/')
+  }
+
   return (
     <div className="add-book-page">
-      <h1>Add New Book</h1>
-      <BookForm />
+      <BookForm onSubmit={handleAdded} />
     </div>
   )
 }
