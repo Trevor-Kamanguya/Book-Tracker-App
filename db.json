@@ -1,7 +1,7 @@
 {
   "books": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Atomic Habits",
       "author": "James Clear",
       "genre": "Self-development",
@@ -10,7 +10,7 @@
       "description": "A book about building better habits and making tiny changes that lead to remarkable results."
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "genre": "Classic Fiction",
@@ -19,7 +19,7 @@
       "description": "A story of the fabulously wealthy Jay Gatsby and his love for Daisy Buchanan."
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Clean Code",
       "author": "Robert C. Martin",
       "genre": "Programming",
@@ -28,7 +28,7 @@
       "description": "A handbook of agile software craftsmanship for writing readable and maintainable code."
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "genre": "Classic Fiction",
@@ -37,13 +37,50 @@
       "description": "A gripping tale of racial injustice and loss of innocence in the American South."
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "The Pragmatic Programmer",
       "author": "Andrew Hunt",
       "genre": "Programming",
       "status": "Want to Read",
       "image": "https://covers.openlibrary.org/b/id/8700428-L.jpg",
       "description": "Timeless advice on software development from journeyman to master."
+    },
+    {
+      "id": "VigLYHCnHr4",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Fiction",
+      "status": "Currently Reading",
+      "image": "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg",
+      "description": "A young shepherd travels from Spain to Egypt in search of treasure and discovers the meaning of life."
+    },
+    {
+      "id": "hfoPlxXEZ4I",
+      "title": "The Alchemist",
+      "author": "Paulo Coelho",
+      "genre": "Fiction",
+      "status": "Currently Reading",
+      "image": "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg",
+      "description": "A young shepherd travels from Spain to Egypt in search of treasure and discovers the meaning of life."
+    },
+    {
+      "id": "vAgLQAsfri4",
+      "title": "Ikigai",
+      "author": "Héctor García",
+      "genre": "Self-development",
+      "status": "Want to Read",
+      "image": "https://m.media-amazon.com/images/I/71ufHaX2PLL.jpg",
+      "description": "A Japanese concept that means reason for being, exploring the secrets to a long and happy life.\n"
+    },
+    {
+      "title": "Deep Work",
+      "author": "Cal Newport",
+      "genre": "Productivity",
+      "status": "Currently Reading",
+      "image": "https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg",
+      "description": "Rules for focused success in a distracted world",
+      "id": "uzHaBAI1jmU"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
