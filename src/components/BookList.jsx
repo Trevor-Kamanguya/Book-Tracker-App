@@ -7,7 +7,7 @@ function BookList() {
   const [error, setError] = useState(null)
 
   useEffect(() => {
-    fetch("http://localhost:3001/books")
+    fetch("http://localhost:6001/books")
       .then(response => {
         if (!response.ok) {
           throw new Error("Failed to fetch books")
