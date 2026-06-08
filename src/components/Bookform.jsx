@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./BookForm.css";
 
-function BookForm({ addBook }) {
+function BookForm({ onSubmit }) {
 
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
@@ -37,7 +37,7 @@ function BookForm({ addBook }) {
 
     try {
       
-      const response = await fetch("YOUR_API_URL_HERE", {
+      const response = await fetch("http://localhost:6001/books", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newBook),
@@ -47,11 +47,7 @@ function BookForm({ addBook }) {
 
       const savedBook = await response.json();
 
-      if (addBook) {
-        addBook(savedBook);
-      } else {
-        console.log("Book submitted (no addBook prop yet):", savedBook);
-      }
+      onSubmit(newBook);
 
       setSuccessMessage(`"${title}" has been added successfully!`);
       setTitle("");
