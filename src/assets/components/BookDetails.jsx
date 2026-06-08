@@ -10,7 +10,7 @@ function BookDetails() {
     deleteBook
   } = useBooks();
 
-  const book = books.find((b) => String(b.id) === id);
+  const book = books.find((b) => b.id === parseInt(id));
 
   if (!book) {
     return (
