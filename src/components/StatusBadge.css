@@ -1,0 +1,41 @@
+.status-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.status-select {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 1.5px solid #c9b99a;
+  border-radius: 0.4rem;
+  background: #faf7f2;
+  color: #3d2b1f;
+  font-size: 0.8rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.status-select:focus {
+  outline: none;
+  border-color: #8b6f47;
+}
+
+.delete-btn {
+  padding: 0.4rem 0.7rem;
+  border: 1.5px solid #e8b4b4;
+  border-radius: 0.4rem;
+  background: #fff5f5;
+  color: #c0392b;
+  font-size: 0.78rem;
+  font-family: inherit;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.delete-btn:hover {
+  background: #fde8e8;
+  border-color: #c0392b;
+}
