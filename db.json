@@ -1,7 +1,7 @@
 {
   "books": [
     {
-      "id": "1",
+      "id": 1,
       "title": "Atomic Habits",
       "author": "James Clear",
       "genre": "Self-development",
@@ -10,7 +10,7 @@
       "description": "A book about building better habits and making tiny changes that lead to remarkable results."
     },
     {
-      "id": "2",
+      "id": 2,
       "title": "The Great Gatsby",
       "author": "F. Scott Fitzgerald",
       "genre": "Classic Fiction",
@@ -19,7 +19,16 @@
       "description": "A story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan."
     },
     {
-      "id": "4",
+      "id": 3,
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "genre": "Programming",
+      "status": "Want to Read",
+      "image": "https://covers.openlibrary.org/b/id/8621137-L.jpg",
+      "description": "A handbook of agile software craftsmanship for writing readable and maintainable code."
+    },
+    {
+      "id": 4,
       "title": "To Kill a Mockingbird",
       "author": "Harper Lee",
       "genre": "Classic Fiction",
@@ -28,7 +37,7 @@
       "description": "A gripping tale of racial injustice and loss of innocence in the American South."
     },
     {
-      "id": "5",
+      "id": 5,
       "title": "The Pragmatic Programmer",
       "author": "Andrew Hunt",
       "genre": "Programming",
@@ -37,7 +46,7 @@
       "description": "Timeless advice on software development from journeyman to master."
     },
     {
-      "id": "6",
+      "id": 6,
       "title": "The Alchemist",
       "author": "Paulo Coelho",
       "genre": "Fiction",
@@ -46,7 +55,7 @@
       "description": "A young shepherd travels from Spain to Egypt in search of treasure and discovers the meaning of life."
     },
     {
-      "id": "7",
+      "id": 7,
       "title": "Deep Work",
       "author": "Cal Newport",
       "genre": "Productivity",
@@ -55,7 +64,7 @@
       "description": "Rules for focused success in a distracted world — why deep work is valuable, rare, and meaningful."
     },
     {
-      "id": "8",
+      "id": 8,
       "title": "Ikigai",
       "author": "Héctor García",
       "genre": "Self-development",
@@ -64,7 +73,7 @@
       "description": "A Japanese concept exploring the secrets to a long, happy, and purposeful life."
     },
     {
-      "id": "9",
+      "id": 9,
       "title": "1984",
       "author": "George Orwell",
       "genre": "Dystopian Fiction",
@@ -73,7 +82,7 @@
       "description": "A chilling vision of a totalitarian future where Big Brother watches every move and truth is whatever the party says."
     },
     {
-      "id": "10",
+      "id": 10,
       "title": "Sapiens",
       "author": "Yuval Noah Harari",
       "genre": "History",
@@ -82,7 +91,7 @@
       "description": "A brief history of humankind — how Homo sapiens came to dominate the planet and what that means for our future."
     },
     {
-      "id": "11",
+      "id": 11,
       "title": "Thinking, Fast and Slow",
       "author": "Daniel Kahneman",
       "genre": "Psychology",
@@ -91,7 +100,7 @@
       "description": "A landmark work exploring the two systems of thought that drive the way we make decisions."
     },
     {
-      "id": "12",
+      "id": 12,
       "title": "Dune",
       "author": "Frank Herbert",
       "genre": "Science Fiction",
@@ -100,7 +109,7 @@
       "description": "An epic tale of politics, religion, and survival on the desert planet Arrakis, home to the most valuable substance in the universe."
     },
     {
-      "id": "13",
+      "id": 13,
       "title": "The 7 Habits of Highly Effective People",
       "author": "Stephen Covey",
       "genre": "Self-development",
@@ -109,7 +118,7 @@
       "description": "Powerful lessons in personal change that have transformed the lives of millions of readers worldwide."
     },
     {
-      "id": "14",
+      "id": 14,
       "title": "Rich Dad Poor Dad",
       "author": "Robert T. Kiyosaki",
       "genre": "Finance",
@@ -118,7 +127,7 @@
       "description": "What the rich teach their kids about money that the poor and middle class do not."
     },
     {
-      "id": "15",
+      "id": 15,
       "title": "Harry Potter and the Philosopher's Stone",
       "author": "J.K. Rowling",
       "genre": "Fantasy",
@@ -127,7 +136,7 @@
       "description": "A young boy discovers he is a wizard and begins his journey at Hogwarts School of Witchcraft and Wizardry."
     },
     {
-      "id": "16",
+      "id": 16,
       "title": "The Lean Startup",
       "author": "Eric Ries",
       "genre": "Business",
@@ -136,7 +145,7 @@
       "description": "How today's entrepreneurs use continuous innovation to create radically successful businesses."
     },
     {
-      "id": "17",
+      "id": 17,
       "title": "Educated",
       "author": "Tara Westover",
       "genre": "Memoir",
@@ -145,7 +154,7 @@
       "description": "A memoir about a young woman who, kept out of school, leaves her survivalist family and earns a PhD from Cambridge University."
     },
     {
-      "id": "18",
+      "id": 18,
       "title": "The Psychology of Money",
       "author": "Morgan Housel",
       "genre": "Finance",
@@ -154,7 +163,7 @@
       "description": "Timeless lessons on wealth, greed, and happiness — why smart people make irrational financial decisions."
     },
     {
-      "id": "19",
+      "id": 19,
       "title": "Becoming",
       "author": "Michelle Obama",
       "genre": "Memoir",
@@ -163,7 +172,7 @@
       "description": "An intimate and powerful memoir by the former First Lady of the United States."
     },
     {
-      "id": "20",
+      "id": 20,
       "title": "The Hitchhiker's Guide to the Galaxy",
       "author": "Douglas Adams",
       "genre": "Science Fiction",

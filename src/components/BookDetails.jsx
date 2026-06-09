@@ -6,7 +6,7 @@ function BookDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
   const { books, updateStatus, deleteBook } = useBooks();
-  const book = books.find((b) => String(b.id) === String(id));
+  const book = books.find((b) => b.id === parseInt(id));
   if (!book) {
     return (
       <div className="details-empty">
