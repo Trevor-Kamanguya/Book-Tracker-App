@@ -16,7 +16,7 @@
       "genre": "Classic Fiction",
       "status": "Completed",
       "image": "https://covers.openlibrary.org/b/id/8432086-L.jpg",
-      "description": "A story of the fabulously wealthy Jay Gatsby and his love for Daisy Buchanan."
+      "description": "A story of the fabulously wealthy Jay Gatsby and his love for the beautiful Daisy Buchanan."
     },
     {
       "id": "3",
@@ -46,40 +46,139 @@
       "description": "Timeless advice on software development from journeyman to master."
     },
     {
-      "id": "VigLYHCnHr4",
+      "id": "6",
       "title": "The Alchemist",
       "author": "Paulo Coelho",
       "genre": "Fiction",
       "status": "Currently Reading",
-      "image": "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg",
+      "image": "https://covers.openlibrary.org/b/id/8327088-L.jpg",
       "description": "A young shepherd travels from Spain to Egypt in search of treasure and discovers the meaning of life."
     },
     {
-      "id": "hfoPlxXEZ4I",
-      "title": "The Alchemist",
-      "author": "Paulo Coelho",
-      "genre": "Fiction",
-      "status": "Currently Reading",
-      "image": "https://m.media-amazon.com/images/I/71aFt4+OTOL.jpg",
-      "description": "A young shepherd travels from Spain to Egypt in search of treasure and discovers the meaning of life."
-    },
-    {
-      "id": "vAgLQAsfri4",
-      "title": "Ikigai",
-      "author": "Héctor García",
-      "genre": "Self-development",
-      "status": "Want to Read",
-      "image": "https://m.media-amazon.com/images/I/71ufHaX2PLL.jpg",
-      "description": "A Japanese concept that means reason for being, exploring the secrets to a long and happy life.\n"
-    },
-    {
+      "id": "7",
       "title": "Deep Work",
       "author": "Cal Newport",
       "genre": "Productivity",
       "status": "Currently Reading",
-      "image": "https://m.media-amazon.com/images/I/71QKQ9mwV7L.jpg",
-      "description": "Rules for focused success in a distracted world",
-      "id": "uzHaBAI1jmU"
+      "image": "https://covers.openlibrary.org/b/id/10054327-L.jpg",
+      "description": "Rules for focused success in a distracted world — why deep work is valuable, rare, and meaningful."
+    },
+    {
+      "id": "8",
+      "title": "Ikigai",
+      "author": "Héctor García",
+      "genre": "Self-development",
+      "status": "Want to Read",
+      "image": "https://covers.openlibrary.org/b/id/10112826-L.jpg",
+      "description": "A Japanese concept exploring the secrets to a long, happy, and purposeful life."
+    },
+    {
+      "id": "9",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Dystopian Fiction",
+      "status": "Completed",
+      "image": "https://covers.openlibrary.org/b/id/8575708-L.jpg",
+      "description": "A chilling vision of a totalitarian future where Big Brother watches every move and truth is whatever the party says."
+    },
+    {
+      "id": "10",
+      "title": "Sapiens",
+      "author": "Yuval Noah Harari",
+      "genre": "History",
+      "status": "Completed",
+      "image": "https://covers.openlibrary.org/b/id/8739161-L.jpg",
+      "description": "A brief history of humankind — how Homo sapiens came to dominate the planet and what that means for our future."
+    },
+    {
+      "id": "11",
+      "title": "Thinking, Fast and Slow",
+      "author": "Daniel Kahneman",
+      "genre": "Psychology",
+      "status": "Want to Read",
+      "image": "https://covers.openlibrary.org/b/id/8692046-L.jpg",
+      "description": "A landmark work exploring the two systems of thought that drive the way we make decisions."
+    },
+    {
+      "id": "12",
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "genre": "Science Fiction",
+      "status": "Want to Read",
+      "image": "https://covers.openlibrary.org/b/id/8231895-L.jpg",
+      "description": "An epic tale of politics, religion, and survival on the desert planet Arrakis, home to the most valuable substance in the universe."
+    },
+    {
+      "id": "13",
+      "title": "The 7 Habits of Highly Effective People",
+      "author": "Stephen Covey",
+      "genre": "Self-development",
+      "status": "Completed",
+      "image": "https://covers.openlibrary.org/b/id/8158964-L.jpg",
+      "description": "Powerful lessons in personal change that have transformed the lives of millions of readers worldwide."
+    },
+    {
+      "id": "14",
+      "title": "Rich Dad Poor Dad",
+      "author": "Robert T. Kiyosaki",
+      "genre": "Finance",
+      "status": "Completed",
+      "image": "https://covers.openlibrary.org/b/id/8749671-L.jpg",
+      "description": "What the rich teach their kids about money that the poor and middle class do not."
+    },
+    {
+      "id": "15",
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author": "J.K. Rowling",
+      "genre": "Fantasy",
+      "status": "Completed",
+      "image": "https://covers.openlibrary.org/b/id/8267553-L.jpg",
+      "description": "A young boy discovers he is a wizard and begins his journey at Hogwarts School of Witchcraft and Wizardry."
+    },
+    {
+      "id": "16",
+      "title": "The Lean Startup",
+      "author": "Eric Ries",
+      "genre": "Business",
+      "status": "Currently Reading",
+      "image": "https://covers.openlibrary.org/b/id/8392932-L.jpg",
+      "description": "How today's entrepreneurs use continuous innovation to create radically successful businesses."
+    },
+    {
+      "id": "17",
+      "title": "Educated",
+      "author": "Tara Westover",
+      "genre": "Memoir",
+      "status": "Want to Read",
+      "image": "https://covers.openlibrary.org/b/id/9256188-L.jpg",
+      "description": "A memoir about a young woman who, kept out of school, leaves her survivalist family and earns a PhD from Cambridge University."
+    },
+    {
+      "id": "18",
+      "title": "The Psychology of Money",
+      "author": "Morgan Housel",
+      "genre": "Finance",
+      "status": "Currently Reading",
+      "image": "https://covers.openlibrary.org/b/id/10756245-L.jpg",
+      "description": "Timeless lessons on wealth, greed, and happiness — why smart people make irrational financial decisions."
+    },
+    {
+      "id": "19",
+      "title": "Becoming",
+      "author": "Michelle Obama",
+      "genre": "Memoir",
+      "status": "Completed",
+      "image": "https://covers.openlibrary.org/b/id/9257340-L.jpg",
+      "description": "An intimate and powerful memoir by the former First Lady of the United States."
+    },
+    {
+      "id": "20",
+      "title": "The Hitchhiker's Guide to the Galaxy",
+      "author": "Douglas Adams",
+      "genre": "Science Fiction",
+      "status": "Want to Read",
+      "image": "https://covers.openlibrary.org/b/id/7392630-L.jpg",
+      "description": "Seconds before Earth is demolished to make way for a hyperspace bypass, Arthur Dent is whisked off the planet by his alien friend Ford Prefect."
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
