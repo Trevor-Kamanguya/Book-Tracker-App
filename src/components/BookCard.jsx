@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 
-function BookCard({ book }) {
+function BookCard({ book, onDelete }) {
   const statusClass = book.status.toLowerCase().replace(/\s+/g, '-')
 
   return (
@@ -16,7 +16,10 @@ function BookCard({ book }) {
         <p className="book-card-author">by {book.author}</p>
         <p className="book-card-genre">{book.genre}</p>
         <span className={`book-card-status ${statusClass}`}>{book.status}</span>
-        <Link to={`/books/${book.id}`} className="book-card-link">View Details</Link>
+        <div className="book-card-actions">
+          <Link to={`/books/${book.id}`} className="book-card-link">View Details</Link>
+          <button className="delete-btn" onClick={() => onDelete(book.id)}>Delete</button>
+        </div>
       </div>
     </div>
   )
